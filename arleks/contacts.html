@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>
+		body {
+			opacity: 0;
+			overflow-x: hidden;
+		}
+
+		html {
+			background-color: #fff;
+		}
+	</style>
+
+</head>
+
+<body class="with-padding">
+
+	<div class="cssload-container">
+		<div class="cssload-speeding-wheel"></div>
+	</div>
+	<header>
+		<div class="container">
+			<div class="row row-eq-height">
+				<div class="col-4">
+					<a href="index.html">
+						<div class="logo">
+							<img src="img/logos/logoblue.png" alt="">
+						</div>
+					</a>
+				</div>
+				<div class="col-8">
+					<div class="flex-container">
+						<ul class="menu">
+							<li>
+								<a href="about_us.html">О нас</a>
+							</li>
+							<li>
+								<a href="our_solutions.html">Продукция</a>
+							</li>
+							<li>
+								<a href="portfolio.html">Портфолио</a>
+							</li>
+							<li>
+								<a href="career.html">Карьера</a>
+							</li>
+							<li class="active">
+								<a href="contacts.html">Контакты</a>
+							</li>
+						</ul>
+						<div class="toggle-button">
+							<span>
+								<i class="fa fa-bars"></i>
+							</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="map">
+		<div class="container">
+			<div class="row row-eq-height">
+				<div class="col-md-8">
+					<div style="height: 400px" id="map">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="contact-wrap">
+						<div id="contact-list">
+
+						</div>
+						<div id="current-item">
+							<div class="trigger">
+								<i class="fa fa-angle-left" aria-hidden="true"></i>
+							</div>
+							<h1></h1>
+							<div class="address"></div>
+							<div class="phones"></div>
+							<div class="links">
+								<a href="" class="email"></a>
+								<a href="" class="site"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<form class="form">
+		<div class="container">
+			<div class="row row-eq-height">
+				<div class="col-md-12">
+					<div class="invite">
+						<h1>Свяжитесь с нами</h1>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="row">
+						<div class="col-md-12 inputs">
+							<input type="name" id="name" placeholder="Ваше имя">
+							<input type="phone" id="phone" placeholder="Ваш телефон">
+							<input type="email" id="email" placeholder="Ваш email">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<textarea name="" id="message"></textarea>
+				</div>
+
+				<div class="offset-md-9 col-md-3">
+					<input type="submit">
+				</div>
+			</div>
+		</div>
+	</form>
+
+
+
+	<footer>
+		<div class="copyright">
+			©1993-2018 , Arleks
+		</div>
+	</footer>
+
+	<script>
+		var contacts = [
+			{
+				coordinates: { lat: 53.881113, lng: 27.593619 },
+				name: 'офис Арлекс',
+				address: 'Беларусь, г.Минск, Партизанский пр-т, 8к11',
+				country: 'Главный офис',
+				phones: ['+375 29 678 88 61', '+38 044 453 56 67'],
+				email: 'export@arleks.com',
+				site: ''
+			},
+			{
+				coordinates: { lat: 50.405214, lng: 30.408410 },
+				name: 'Progress market',
+				address: 'УКРАИНА, г.Киев, ул. Трублаини,2',
+				country: 'Украина',
+				phones: ['+38 044 453 56 66', '+38 044 453 56 67'],
+				email: 'info@progressmarket.com.ua',
+				site: 'www.progressmarket.com.ua'
+			},
+			{
+				coordinates: { lat: 54.701505, lng: 25.221118 },
+				name: 'Feratex',
+				address: 'Литва, г. Вильнюс, Laisves pr. 60',
+				country: 'Литва',
+				phones: ['+370 687 520 87'],
+				email: 'info@feratex.lt',
+				site: 'www.feratex.lt'
+			},
+			{
+				coordinates: { lat: 55.772831, lng: 37.615858 },
+				name: 'ООО "Арлекс"',
+				address: 'Россия, Москва, Большой Каретный пер., д.21, стр.1, офис 401',
+				country: 'Россия',
+				phones: ['+7 495 970 85 10', '+7 495 694 33 85'],
+				site: 'www.arleks-stell.ru'
+			},
+			{
+				coordinates: { lat: 40.185336, lng: 44.511019 },
+				name: 'Hoval',
+				address: 'Armenia, Yerevan, Parpetsu 22',
+				country: 'Армения',
+				phones: ['+(374 10) 53-20-75', '+(374 93) 93-55-88'],
+				site: 'www.hoval.am'
+			}
+		]
+		function initMap() {
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 14,
+				mapTypeControl: false,
+				streetViewControl: false,
+				fullscreenControl: false,
+				center: contacts[0].coordinates,
+				styles: [
+					{
+						"featureType": "administrative.land_parcel",
+						"elementType": "labels",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					},
+					{
+						"featureType": "poi",
+						"stylers": [
+							{
+								"visibility": "off"
+							},
+							{
+								"weight": 1
+							}
+						]
+					},
+					{
+						"featureType": "poi",
+						"elementType": "labels.text",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					},
+					{
+						"featureType": "road.local",
+						"elementType": "labels",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					}
+				]
+
+			});
+			var markers = [];
+			var contactList = document.getElementById('contact-list');
+			for (var i = 0; i < contacts.length; i++) {
+				var currentItem1 = contacts[i];
+				var marker = new google.maps.Marker({
+					position: currentItem1.coordinates,
+					map: map
+				})
+				var contactCountry = currentItem1.country;
+				var listItem = document.createElement('div');
+				listItem.textContent = contactCountry;
+
+				function back() {
+					document.querySelector('.contact-wrap').classList.remove('clicked');
+				}
+
+				function onClick() {
+
+					document.querySelector('#current-item h1').textContent = this.name;
+					document.querySelector('#current-item .address').textContent = this.address;
+					for (var j = 0; j < this.phones.length; j++) {
+						document.querySelector('#current-item .phones').textContent = '';
+						document.querySelector('#current-item .phones').innerHTML += this.phones[j] + '<br>';
+					}
+					document.querySelector('#current-item .links .site').href = 'https://' + this.site;
+					document.querySelector('#current-item .links .site').textContent = this.site;
+
+					document.querySelector('#current-item .links .email').href = 'mailto:' + this.email;
+					document.querySelector('#current-item .links .email').textContent = this.email;
+					map.setCenter(this.coordinates);
+					map.setZoom(14);
+					document.getElementsByClassName('contact-wrap')[0].classList.add('clicked');
+				}
+
+				listItem.addEventListener('click', onClick.bind(currentItem1));
+				document.querySelector('.trigger').addEventListener('click', back);
+				contactList.appendChild(listItem);
+			}
+		}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzj9FbQiMaZqm0NWYo1Mr09d4zvGF7HbY&callback=initMap">
+	</script>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
