@@ -68,14 +68,17 @@ function animate() {
 	})
 }
 
-function onScroll(event) {
-
+function updateHeaderMovedStyle() {
 	var scrollPosition = $(document).scrollTop();
-	if (scrollPosition > 100)
+	if (scrollPosition > 0)
 		$('header').addClass('moved');
 	else
 		$('header').removeClass('moved');
+}
 
+function onScroll(event) {
+	updateHeaderMovedStyle();
+	var scrollPosition = $(document).scrollTop();
 	$('nav a').each(function () {
 		var currentLink = $(this);
 		var refElement = $(currentLink.attr("href"));
@@ -105,8 +108,9 @@ $(function () {
 		var target = this.hash;
 		$target = $(target);
 		$('html, body').stop().animate({
-			'scrollTop': $target.offset().top + 2
+			'scrollTop': $target.offset().top
 		}, 500, 'swing', function () {
+			updateHeaderMovedStyle();
 			window.location.hash = target;
 			$(document).on("scroll", onScroll);
 		});
