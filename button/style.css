@@ -53,6 +53,14 @@ button {
   text-transform: uppercase;
 }
 
+#form-trigger.active {
+  display: none;
+}
+
+button.success {
+  border: 1px solid green;
+}
+
 #join-button {
   width: 100%;
 }
