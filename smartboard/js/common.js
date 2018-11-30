@@ -15,6 +15,7 @@ $(function() {
   $('.owl-carousel.dao').owlCarousel({
     dots: false,
     loop: false,
+    autoHeight: true,
     margin: 0,
     items: 1,
     nav: false,
@@ -81,6 +82,14 @@ $(function() {
       valueField: 'column-1',
       theme: 'default',
       labelText: '',
+      colors: [
+        '#D71B7C',
+        '#FF1974',
+        '#25378F',
+        '#292933',
+        '#251E79',
+        '#25378F'
+      ],
       allLabels: [],
       balloon: {},
       legend: {
@@ -93,11 +102,15 @@ $(function() {
       titles: [],
       dataProvider: [
         {
-          category: 'Emission',
+          category:
+            window.location.pathname === '/eng.html'
+              ? 'Emission'
+              : 'Общая эмиссия',
           'column-1': '3200000000'
         },
         {
-          category: 'PRESALE',
+          category:
+            window.location.pathname === '/eng.html' ? 'PRESALE' : 'Препрожажи',
           'column-1': '400000000'
         },
         {
@@ -105,15 +118,20 @@ $(function() {
           'column-1': '1400000'
         },
         {
-          category: 'Team',
+          category:
+            window.location.pathname === '/eng.html' ? 'Team' : 'Команде',
           'column-1': '1200000'
         },
         {
-          category: 'Reserve',
+          category:
+            window.location.pathname === '/eng.html' ? 'Reserve' : 'Резерв',
           'column-1': '200000000'
         },
         {
-          category: 'Participants      ',
+          category:
+            window.location.pathname === '/eng.html'
+              ? 'Participants'
+              : 'Участникам',
           'column-1': '16800000000'
         }
       ]
@@ -121,12 +139,10 @@ $(function() {
   }
 
   $('.owl-carousel.team').owlCarousel({
-    dots: false,
     loop: false,
     margin: 0,
     items: 1,
-    nav: false,
-    dots: false,
+    dots: true,
     responsive: {
       1200: {
         items: 5
