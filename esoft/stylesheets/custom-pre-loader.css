@@ -1,0 +1,27 @@
+
+body.preloader-running{
+    overflow: hidden;
+}
+
+div#preloader {
+    background: none repeat scroll 0 0 white;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+#status  {
+     width: 200px;
+     height: 200px;
+     position: fixed;
+     left: 50%;
+     top: 50%;
+     background-image: url("../images/loader.gif");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 80px 79px;
+     margin: -100px 0 0 -100px;
+ }

@@ -1,0 +1,277 @@
+a,a:hover {
+	text-decoration: none;
+}
+
+/*Owl Carousel Pagination Common Style*/
+
+.owl-controls .owl-dots {
+	text-align: center;
+}
+
+.owl-controls .owl-dots .owl-dot {
+	display: inline-block;
+	width: 25px;
+	height: 7px;
+	margin-right: 3px;
+}
+
+.owl-controls .owl-dots .owl-dot:last-child {
+	margin-right: 0;
+}
+
+@media (min-width: 1024px) and (max-width: 5000px) {
+	.container{
+		width: 960px;
+	}
+}
+
+.extra-page-horizontal-nav {
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	z-index: 9999;
+	overflow: hidden;
+}
+
+.extra-page-horizontal-nav .nav-logo {
+	width: 20%;
+	float: left;
+}
+
+.extra-page-horizontal-nav .nav-tab {
+	width: 60%;
+	float: left;
+	text-align: center;
+}
+
+.extra-page-horizontal-nav .nav-social {
+	width: 20%;
+	float: left;
+}
+
+.extra-page-horizontal-nav .nav-tab ul {
+	display: inline-block;
+}
+
+.extra-page-horizontal-nav .nav-tab ul li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 2px;
+}
+
+.extra-page-horizontal-nav .nav-tab ul li:last-child {
+	margin-right: 0;
+}
+
+.extra-page-horizontal-nav .nav-tab ul li a {
+	display: inline-block;
+	padding: 20px 22px;
+	font-size: 12px;
+	line-height: 19px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.extra-page-horizontal-nav .nav-social a {
+	display: inline-block;
+	padding: 18px 10px;
+	margin-right: 2px;
+}
+
+.extra-page-horizontal-nav .nav-social a:last-child {
+	margin-right: 0;
+}
+
+.extra-page-horizontal-nav .nav-social .nav-social-icon {
+	font-size: 18px;
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/*  COMMON ELEMENTS & TYPOGRAPHY */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*Page Styles*/
+
+
+#mastwrap {
+	margin-top: 60px;
+}
+
+#banner {
+	padding: 15px 0px;
+}
+
+.banner-head h2 {
+	font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    line-height: 43px;
+    margin-bottom: 10px;
+    padding-left: 4px;
+    text-transform: uppercase;
+}
+
+.banner-subhead span {
+	display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    line-height: 19px;
+    padding: 7px 8px 5px 12px;
+    text-transform: uppercase;
+}
+
+.content-main-heading p {
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: 4px;
+	font-weight: 400;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.news-content {
+	padding-top: 50px;
+}
+
+.news-content p {
+	font-size: 12px;
+	line-height: 21px;
+	font-weight: 400;
+}
+
+.news-main-carousel .img-section {
+	width: 100%;
+}
+
+.news-main-carousel .owl-controls .owl-dots {
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+  	-ms-transform: translateX(-50%);
+  	transform: translateX(-50%);
+}
+
+.news-main-carousel .img-section img {
+	width: 100% !important;
+}
+
+.news-main-tags .name {
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.news-main-tags .date {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 600;
+	margin-left: 10px;
+}
+
+.extra-tag-section {
+	padding-top: 15px;
+}
+
+.extra-tag-section a {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.extra-tag-section a:last-child {
+	margin-right: 0;
+}
+
+/*Aside section*/
+
+.news-aside-section .heading {
+	margin-bottom: 20px;
+}
+
+.news-aside-section .heading p {
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-left: 2px;
+	border-bottom: 2px solid;
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.category-list ul {
+	margin: 0;
+	padding: 0;
+}
+
+.category-list ul li {
+	list-style: none;
+	display: block;
+	margin:10px 0px;
+	margin-left: 0px;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+}
+
+.recent-news-list ul {
+	margin: 0;
+	padding: 0;
+}
+
+.recent-news-list ul li {
+	list-style: none;
+	display: block;
+	margin:20px 0px;
+	margin-left: 0px;
+}
+
+.recent-news-list ul li a {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 500;
+}
+
+
+/*				Parallax Layer Style 			*/
+
+
+
+.parallax{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed !important;
+}
+
+/*this class will be activated on mobile devices in order to switch off the parallax effect*/
+.parallax-off, .no-parallax {
+	background-attachment:scroll !important;
+	background-size:cover !important;
+}
+
+.parallax-layer-04 {
+	background-image: url("../images/parallax/03.jpg");
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+

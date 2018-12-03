@@ -1,0 +1,89 @@
+
+.home-01.home-wrap .bg1 {
+	background: url("../images/home/01.jpg");
+	background-size: cover;
+}
+
+.home-01.home-wrap .bg2 {
+	background: url("../images/home/02.jpg");
+	background-size: cover;
+}
+
+.home-01.home-wrap .bg3 {
+	background: url("../images/home/03.jpg");
+	background-size: cover;
+}
+
+.home-01.home-wrap .home-container .item {
+	width: 100%;
+	position: relative;
+}
+
+
+
+.home-01.home-wrap .home-container .item .logo-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.home-01.home-wrap .home-container .item .logo-overlay .logo-img-wrap {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+
+.home-01.home-wrap .home-container .item .logo-overlay .logo-img-wrap img {
+	width: auto;
+}
+
+.home-01 .owl-carousel .owl-item img {
+	width: 100%;
+}
+
+.home-01.home-wrap {
+	position: relative;
+}
+
+.home-01.home-wrap .home-container {
+	width: 100%;
+}
+
+.home-01 .one-section-owl-nav-no-pag-contaner {
+	width: 100%;
+	position: relative;
+}
+
+
+
+.home-01 .one-section-owl-nav-no-pag-contaner .owl-controls .owl-nav .owl-prev {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+  	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+	left: 20px;
+}
+
+.home-01 .one-section-owl-nav-no-pag-contaner .owl-controls .owl-nav .owl-next {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+  	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+	right: 20px;
+}
+
+.home-01 .main-owl-nav {
+	font-size: 20px;
+	padding: 20px;
+}
+

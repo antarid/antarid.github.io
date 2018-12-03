@@ -1,0 +1,34 @@
+.home-06 {
+	width: 100%;
+	position: relative;
+}
+
+.home-06 .content-wrap {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+
+b, strong {
+	font-weight: inherit;
+}
+
+.home-06 .content-wrap .content h1 {
+	font-size: 40px;
+	line-height: 47px;
+	font-weight: 300 !important;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+
+.home-06 .content-wrap-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top:0;
+}

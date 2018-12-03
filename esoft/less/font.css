@@ -1,0 +1,19 @@
+/*FONTS.CSS*/
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* Author: UNBRANDED.*/
+/* Website: http://www.unbranded.co */
+/* Copyright: (C) 2015 */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* YOUR CUSTOM FONTS CAN BE DEFINED HERE VIA CSS3 FONT-FACE TECHNOLOGY*/
+/* More info : http://www.littleboxofideas.com/blog/tutorials/how-do-i-implement-font-face */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.font1 {
+  font-family: 'Montserrat', sans-serif;
+}
+.font2 {
+  font-family: 'Raleway', sans-serif;
+}
+.font3 {
+  font-family: 'Crimson Text', sans-serif;
+  font-style: italic;
+}
