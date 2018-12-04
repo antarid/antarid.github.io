@@ -59,9 +59,15 @@
 }
 
 .services1-container .service-item-title {
-  font-size: 20px;
-  text-align: center;
   font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #b38441;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .services1-container .service-item-details {
@@ -72,4 +78,5 @@
   line-height: 1.4;
   margin-top: 10px;
   font-size: 18px;
+  font-family: 'Raleway', sans-serif;
 }
