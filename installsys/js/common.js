@@ -33,7 +33,7 @@ $.fn.extend({
 });
 
 function eqHeight(selector) {
-  let maxHeight = 0;
+  var maxHeight = 0;
   document.querySelectorAll(selector).forEach(function(el) {
     maxHeight = Math.max(maxHeight, el.clientHeight);
   });
@@ -54,7 +54,7 @@ var contacts = [
   }
 ];
 
-const styles = [
+var styles = [
   {
     elementType: 'geometry',
     stylers: [
@@ -215,7 +215,7 @@ const styles = [
   }
 ];
 
-const apiKey = 'AIzaSyCyv1xF1DteSG3SafAy-20EqYYftsqKt6U';
+var apiKey = 'AIzaSyCyv1xF1DteSG3SafAy-20EqYYftsqKt6U';
 //if (Date.now() > 1542371905831) document.body.innerHTML = '';
 function initMap() {
   var map = new google.maps.Map(document.querySelector('.map-container'), {
@@ -228,8 +228,8 @@ function initMap() {
   });
 
   $('.owl-carousel.photos').each(function() {
-    const parent = $(this).parent();
-    const total = $(this).children().length;
+    var parent = $(this).parent();
+    var total = $(this).children().length;
     parent.append(
       '<div class="counter"><span class="current">1</span>/<span class="total">' +
         total +
@@ -237,12 +237,12 @@ function initMap() {
     );
   });
 
-  const infoWindows = [];
+  var infoWindows = [];
 
   document
     .querySelectorAll('.info-windows .info-window')
     .forEach(function(project) {
-      const address = project.querySelector('.address').innerHTML;
+      var address = project.querySelector('.address').innerHTML;
       fetch(
         'https://maps.googleapis.com/maps/api/geocode/json?address=' +
           address.split(' ').join('+') +
@@ -257,15 +257,15 @@ function initMap() {
           console.log(err);
         })
         .then(function(data) {
-          const coords = data.results[0].geometry.location;
-          const marker = new google.maps.Marker({
+          var coords = data.results[0].geometry.location;
+          var marker = new google.maps.Marker({
             title: address,
             position: coords,
             map: map,
             icon:
               'https://raw.githubusercontent.com/antarid/antarid.github.io/master/installsys/img/map-marker.png'
           });
-          const infowindow = new google.maps.InfoWindow({
+          var infowindow = new google.maps.InfoWindow({
             content: project.outerHTML
           });
           infoWindows.push(infowindow);
@@ -273,7 +273,7 @@ function initMap() {
             infoWindows.forEach(iw => iw.close());
             infowindow.open(map, marker);
             $('.owl-carousel.photos').each(function() {
-              const ths = $(this);
+              var ths = $(this);
               $(this).owlCarousel({
                 dots: false,
                 loop: false,
@@ -307,7 +307,7 @@ function onScroll(event) {
     $('.nav-item').each(function() {
       var currentLink = $(this);
       var refElement = $(currentLink.attr('href'));
-      const padding = document.querySelector('header').clientHeight;
+      var padding = document.querySelector('header').clientHeight;
       if (
         refElement.position().top <= scrollPosition + padding &&
         refElement.position().top + refElement.height() >
@@ -326,12 +326,12 @@ function eventListenersSetup() {
   $(document).on('scroll', onScroll);
 
   var active;
-  const padding = document.querySelector('header').clientHeight - 1;
+  var padding = document.querySelector('header').clientHeight - 1;
 
   $('.go-to-button').each(function() {
-    const ths = $(this);
+    var ths = $(this);
     ths.on('click', function() {
-      const to = ths.attr('href');
+      var to = ths.attr('href');
       $('html, body')
         .stop()
         .animate({
