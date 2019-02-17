@@ -31,6 +31,30 @@
   </head>
 
   <body>
+    <div class="basket-outer-container">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-xl-6">
+            <div class="basket">
+              <div class="close"><i class="fa fa-times"></i></div>
+              <div class="basket-title">
+                You've ordered <span>VIP + Master</span>
+              </div>
+              <div class="basket-cost">It cost <span>500$</span></div>
+              <form action="">
+                <input type="text" placeholder="name" />
+                <input type="text" placeholder="email" />
+                <input type="text" placeholder="Link to your demo" />
+                <input type="text" id="wishes" placeholder="Special wishes" />
+                <div class="basket-submit button">
+                  submit
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <header>
       <div class="logo scroll-to" target="top">
         mix your sounds
@@ -101,6 +125,10 @@
       </div>
     </header>
     <section class="first">
+      <div class="invite-to-scroll">
+        <div>Scroll down...</div>
+        <i class="fa fa-arrow-down"></i>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -135,22 +163,38 @@
                     </div>
                     <div class="pack-features">
                       <div class="pack-feature">
-                        32 GB storage
+                        Full information support in the period of cooperation to
+                        work with your project
                       </div>
                       <div class="pack-feature">
-                        32 GB storage
+                        Ability to make changes to the project up to 10 times
                       </div>
                       <div class="pack-feature">
-                        32 GB storage
+                        Tune vocals or instruments tracks (if needed)
                       </div>
                       <div class="pack-feature">
-                        32 GB storage
+                        Quantize drums or instruments tracks (if needed)
+                      </div>
+                      <div class="pack-feature">
+                        Triggering drums (if needed)
+                      </div>
+                      <div class="pack-feature">
+                        Final bounced mix in WAV, MP3, FLAC
+                      </div>
+                      <div class="pack-feature">
+                        Multiple tracks or stems of final project (if needed)
+                      </div>
+                      <div class="pack-feature">
+                        Presets export (if needed)
+                      </div>
+                      <div class="pack-feature">
+                        Archived project for storage
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="button-container">
-                  <div class="button scroll-to" target="order">
+                  <div class="button">
                     order now
                   </div>
                 </div>
@@ -160,7 +204,7 @@
               <div class="pack-container">
                 <div class="pack">
                   <div class="pack-name">
-                    VIP Mix + Master
+                    Mix + Master
                   </div>
                   <div class="pack-content">
                     <div class="pack-price">
@@ -168,22 +212,19 @@
                     </div>
                     <div class="pack-features">
                       <div class="pack-feature">
-                        32 GB storage
+                        Ability to make changes to the project up to 5 times
                       </div>
                       <div class="pack-feature">
-                        32 GB storage
+                        Final result in WAV, MP3, FLAC
                       </div>
                       <div class="pack-feature">
-                        32 GB storage
-                      </div>
-                      <div class="pack-feature">
-                        32 GB storage
+                        Archived project for storage
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="button-container">
-                  <div class="button scroll-to" target="order">
+                  <div class="button">
                     order now
                   </div>
                 </div>
@@ -193,7 +234,7 @@
               <div class="pack-container">
                 <div class="pack">
                   <div class="pack-name">
-                    VIP Mix + Master
+                    Master
                   </div>
                   <div class="pack-content">
                     <div class="pack-price">
@@ -201,22 +242,23 @@
                     </div>
                     <div class="pack-features">
                       <div class="pack-feature">
-                        32 GB storage
+                        Full information support in the period of cooperation to
+                        work with your project
                       </div>
                       <div class="pack-feature">
-                        32 GB storage
+                        Ability to make changes to the project up to 5 times
                       </div>
                       <div class="pack-feature">
-                        32 GB storage
+                        Final result in WAV / MP3 / FLAC
                       </div>
                       <div class="pack-feature">
-                        32 GB storage
+                        Archived project for storage
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="button-container">
-                  <div class="button scroll-to" target="order">
+                  <div class="button order">
                     order now
                   </div>
                 </div>
@@ -399,45 +441,67 @@
     </section>
     <section class="how-it-works">
       <div class="title">how it works</div>
-      <div class="steps">
-        <div class="step">
-          <div class="step-icon">
-            <i class="fa fa-star"> </i>
-          </div>
-          <div class="step-description">
-            step 1
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-icon">
-            <i class="fa fa-star"> </i>
-          </div>
-          <div class="step-description">
-            step 2
+      <div class="steps row">
+        <div class="col-md col-4">
+          <div class="step">
+            <div class="step-icon">
+              <i class="fa fa-star"> </i>
+            </div>
+            <div class="step-description">
+              step 1
+            </div>
           </div>
         </div>
-        <div class="step">
-          <div class="step-icon">
-            <i class="fa fa-star"> </i>
-          </div>
-          <div class="step-description">
-            step 3
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-icon">
-            <i class="fa fa-star"> </i>
-          </div>
-          <div class="step-description">
-            step 4
+        <div class="col-md col-4">
+          <div class="step">
+            <div class="step-icon">
+              <i class="fa fa-star"> </i>
+              <div class="before">
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="step-description">
+              step 2
+            </div>
           </div>
         </div>
-        <div class="step">
-          <div class="step-icon">
-            <i class="fa fa-star"> </i>
+        <div class="col-md col-4">
+          <div class="step">
+            <div class="step-icon">
+              <i class="fa fa-star"> </i>
+              <div class="before">
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="step-description">
+              step 3
+            </div>
           </div>
-          <div class="step-description">
-            step 5
+        </div>
+        <div class="col-md col-4">
+          <div class="step">
+            <div class="step-icon">
+              <i class="fa fa-star"> </i>
+              <div class="before">
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="step-description">
+              step 4
+            </div>
+          </div>
+        </div>
+        <div class="col-md col-4">
+          <div class="step">
+            <div class="step-icon">
+              <i class="fa fa-star"> </i>
+              <div class="before">
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="step-description">
+              step 5
+            </div>
           </div>
         </div>
       </div>
@@ -483,8 +547,12 @@
             <form action="">
               <input type="text" placeholder="Your name" />
               <input type="email" placeholder="Your email" />
-              <input type="text" placeholder="Link to your demo" />
-              <input id="wishes" type="text" placeholder="Special wishes" />
+              <input type="text" placeholder="Numbers from price list" />
+              <input
+                id="wishes"
+                type="text"
+                placeholder="Additional information"
+              />
               <a href="#" onClick="" class="button">отправить</a>
             </form>
           </div>
